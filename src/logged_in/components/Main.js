@@ -1,7 +1,7 @@
 import React, { memo, useCallback, useState, useEffect, Fragment } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import withStyles from '@mui/styles/withStyles';
+import withStyles from "@mui/styles/withStyles";
 import Routing from "./Routing";
 import NavBar from "./navigation/NavBar";
 import ConsecutiveSnackbarMessages from "../../shared/components/ConsecutiveSnackbarMessages";
@@ -16,7 +16,7 @@ const styles = (theme) => ({
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       marginLeft: 0,
     },
   },
@@ -41,9 +41,8 @@ function Main(props) {
   const [Dropzone, setDropzone] = useState(null);
   const [hasFetchedDropzone, setHasFetchedDropzone] = useState(false);
   const [DateTimePicker, setDateTimePicker] = useState(null);
-  const [hasFetchedDateTimePicker, setHasFetchedDateTimePicker] = useState(
-    false
-  );
+  const [hasFetchedDateTimePicker, setHasFetchedDateTimePicker] =
+    useState(false);
   const [transactions, setTransactions] = useState([]);
   const [statistics, setStatistics] = useState({ views: [], profit: [] });
   const [posts, setPosts] = useState([]);
@@ -231,7 +230,7 @@ function Main(props) {
 
   const selectDashboard = useCallback(() => {
     smoothScrollTop();
-    document.title = "WaVer - Dashboard";
+    document.title = "SparklingTools - Dashboard";
     setSelectedTab("Dashboard");
     if (!hasFetchedCardChart) {
       setHasFetchedCardChart(true);
@@ -248,7 +247,7 @@ function Main(props) {
 
   const selectPosts = useCallback(() => {
     smoothScrollTop();
-    document.title = "WaVer - Posts";
+    document.title = "SparklingTools - Posts";
     setSelectedTab("Posts");
     if (!hasFetchedEmojiTextArea) {
       setHasFetchedEmojiTextArea(true);
@@ -292,7 +291,7 @@ function Main(props) {
 
   const selectSubscription = useCallback(() => {
     smoothScrollTop();
-    document.title = "WaVer - Subscription";
+    document.title = "SparklingTools - Subscription";
     setSelectedTab("Subscription");
   }, [setSelectedTab]);
 
