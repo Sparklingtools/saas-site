@@ -107,7 +107,7 @@ function HeadSection(props) {
             >
               <div className={classNames(classes.containerFix, "container")}>
                 <Box justifyContent="space-between" className="row">
-                  <Grid item xs={11} md={5}>
+                  <Grid item xs={12} md={5} xl={5}>
                     <Box
                       display="flex"
                       flexDirection="column"
@@ -155,6 +155,7 @@ function HeadSection(props) {
                   <Grid
                     item
                     md={6}
+                    xl={6}
                     sx={{ display: { xl: "block", md: "block", xs: "none" } }}
                   >
                     <ZoomImage

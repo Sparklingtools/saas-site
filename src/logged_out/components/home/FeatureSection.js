@@ -20,9 +20,10 @@ const iconSize = 30;
 const features = [
   {
     color: "#00C853",
-    headline: "Feature 1",
+    headline: "Stats",
     text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
-    icon: <BuildIcon style={{ fontSize: iconSize }} />,
+
+    icon: <BarChartIcon style={{ fontSize: iconSize }} />,
     mdDelay: "0",
     smDelay: "0",
   },
@@ -54,7 +55,7 @@ const features = [
     color: "#DD2C00",
     headline: "Feature 5",
     text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.",
-    icon: <BarChartIcon style={{ fontSize: iconSize }} />,
+    icon: <BuildIcon style={{ fontSize: iconSize }} />,
     mdDelay: "200",
     smDelay: "0",
   },
