@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-import { Grid, Typography, Card, Button, Hidden, Box } from "@mui/material";
+import { Grid, Typography, Card, Button, Box } from "@mui/material";
 import withStyles from "@mui/styles/withStyles";
 import WaveBorder from "../../../shared/components/WaveBorder";
 import ZoomImage from "../../../shared/components/ZoomImage";
@@ -107,7 +107,7 @@ function HeadSection(props) {
             >
               <div className={classNames(classes.containerFix, "container")}>
                 <Box justifyContent="space-between" className="row">
-                  <Grid item xs={12} md={5}>
+                  <Grid item xs={11} md={5}>
                     <Box
                       display="flex"
                       flexDirection="column"
@@ -152,15 +152,17 @@ function HeadSection(props) {
                       </div>
                     </Box>
                   </Grid>
-                  <Hidden mdDown>
-                    <Grid item md={6}>
-                      <ZoomImage
-                        src={`${process.env.PUBLIC_URL}/images/logged_out/headerImage.jpg`}
-                        className={classes.image}
-                        alt="header example"
-                      />
-                    </Grid>
-                  </Hidden>
+                  <Grid
+                    item
+                    md={6}
+                    sx={{ display: { xl: "block", md: "block", xs: "none" } }}
+                  >
+                    <ZoomImage
+                      src={`${process.env.PUBLIC_URL}/images/logged_out/headerImage.jpg`}
+                      className={classes.image}
+                      alt="header example"
+                    />
+                  </Grid>
                 </Box>
               </div>
             </Card>
