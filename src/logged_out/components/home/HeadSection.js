@@ -159,7 +159,7 @@ function HeadSection(props) {
                     sx={{ display: { xl: "block", md: "block", xs: "none" } }}
                   >
                     <ZoomImage
-                      src={`${process.env.PUBLIC_URL}/images/logged_out/headerImage.jpg`}
+                      src={`${process.env.PUBLIC_URL}/images/logged_out/previewDashboard.jpg`}
                       className={classes.image}
                       alt="header example"
                     />
