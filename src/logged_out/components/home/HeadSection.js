@@ -95,6 +95,10 @@ function HeadSection(props) {
   const { classes, theme } = props;
   const isWidthUpLg = useMediaQuery(theme.breakpoints.up("lg"));
 
+  //Preload image.
+  const imgObj = new Image();
+  imgObj.src = `${process.env.PUBLIC_URL}/images/logged_out/previewDashboard.jpg`;
+
   return (
     <Fragment>
       <div className={classNames("lg-p-top", classes.wrapper)}>
@@ -159,9 +163,9 @@ function HeadSection(props) {
                     sx={{ display: { xl: "block", md: "block", xs: "none" } }}
                   >
                     <ZoomImage
-                      src={`${process.env.PUBLIC_URL}/images/logged_out/previewDashboard.jpg`}
+                      src={imgObj.src}
                       className={classes.image}
-                      alt="header example"
+                      alt="Dashboard example"
                     />
                   </Grid>
                 </Box>
