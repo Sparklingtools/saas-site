@@ -158,16 +158,11 @@ function HeadSection(props) {
                     xl={6}
                     sx={{ display: { xl: "block", md: "block", xs: "none" } }}
                   >
-                    <img
+                    <ZoomImage
                       src={`${process.env.PUBLIC_URL}/images/logged_out/previewDashboard.jpg`}
                       className={classes.image}
                       alt="header example"
                     />
-                    {/* <ZoomImage
-                      src={`${process.env.PUBLIC_URL}/images/logged_out/previewDashboard.jpg`}
-                      className={classes.image}
-                      alt="header example"
-                    /> */}
                   </Grid>
                 </Box>
               </div>
