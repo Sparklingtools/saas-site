@@ -110,72 +110,66 @@ function HeadSection(props) {
               data-aos="zoom-in"
             >
               <div className={classNames(classes.containerFix, "container")}>
-                <Box>
-                  <Grid
-                    container
-                    justifyContent="space-between"
-                    className="row"
-                  >
-                    <Grid item xs={12} md={5} xl={5}>
-                      <Box
-                        display="flex"
-                        flexDirection="column"
-                        justifyContent="space-between"
-                        height="100%"
-                      >
-                        <Box mb={4}>
-                          <Typography variant={isWidthUpLg ? "h3" : "h4"}>
-                            Revolutionize your Shopify store with
-                          </Typography>
+                <Grid container justifyContent="space-between" className="row">
+                  <Grid item xs={12} md={5} xl={5}>
+                    <Box
+                      display="flex"
+                      flexDirection="column"
+                      justifyContent="space-between"
+                      height="100%"
+                    >
+                      <Box mb={4}>
+                        <Typography variant={isWidthUpLg ? "h3" : "h4"}>
+                          Revolutionize your Shopify store with
+                        </Typography>
+                        <Typography
+                          variant={isWidthUpLg ? "h3" : "h4"}
+                          color="primary"
+                        >
+                          <b>Price Alert</b>
+                        </Typography>
+                        <Typography variant={isWidthUpLg ? "h3" : "h4"}>
+                          Drive sales through strategic price updates
+                        </Typography>
+                      </Box>
+                      <div>
+                        <Box mb={2}>
                           <Typography
-                            variant={isWidthUpLg ? "h3" : "h4"}
-                            color="primary"
+                            variant={isWidthUpLg ? "h6" : "body1"}
+                            color="textSecondary"
                           >
-                            <b>Price Alert</b>
-                          </Typography>
-                          <Typography variant={isWidthUpLg ? "h3" : "h4"}>
-                            Drive sales through strategic price updates
+                            Let your visitors configure prices for what they are
+                            willing to pay and receive emails when the price
+                            reach it.
                           </Typography>
                         </Box>
-                        <div>
-                          <Box mb={2}>
-                            <Typography
-                              variant={isWidthUpLg ? "h6" : "body1"}
-                              color="textSecondary"
-                            >
-                              Let your visitors configure prices for what they
-                              are willing to pay and receive emails when the
-                              price reach it.
-                            </Typography>
-                          </Box>
-                          <Button
-                            variant="contained"
-                            color="secondary"
-                            fullWidth
-                            className={classes.extraLargeButton}
-                            classes={{ label: classes.extraLargeButtonLabel }}
-                            href="#"
-                          >
-                            Install in your Shopify store
-                          </Button>
-                        </div>
-                      </Box>
-                    </Grid>
-
-                    <Grid
-                      item
-                      md={6}
-                      xl={6}
-                      sx={{ display: { xl: "block", md: "block", xs: "none" } }}
-                    >
-                      <ZoomImage
-                        src={imgObj.src}
-                        className={classes.image}
-                        alt="Dashboard example"
-                      />
-                    </Grid>
+                        <Button
+                          variant="contained"
+                          color="secondary"
+                          fullWidth
+                          className={classes.extraLargeButton}
+                          classes={{ label: classes.extraLargeButtonLabel }}
+                          href="#"
+                        >
+                          Comming soon!
+                        </Button>
+                      </div>
+                    </Box>
                   </Grid>
-                </Box>
+
+                  <Grid
+                    item
+                    md={6}
+                    xl={6}
+                    sx={{ display: { xl: "block", md: "block", xs: "none" } }}
+                  >
+                    <ZoomImage
+                      src={imgObj.src}
+                      className={classes.image}
+                      alt="Dashboard example"
+                    />
+                  </Grid>
+                </Grid>
               </div>
             </Card>
           </Box>
