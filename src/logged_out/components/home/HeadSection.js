@@ -162,11 +162,57 @@ function HeadSection(props) {
                     xl={6}
                     sx={{ display: { xl: "block", md: "block", xs: "none" } }}
                   >
-                    <ZoomImage
+                    {/* START TEST BOX  */}
+                    <Box
+                      display="flex"
+                      flexDirection="column"
+                      justifyContent="space-between"
+                      height="100%"
+                    >
+                      <Box mb={4}>
+                        <Typography variant={isWidthUpLg ? "h3" : "h4"}>
+                          Revolutionize your Shopify store with
+                        </Typography>
+                        <Typography
+                          variant={isWidthUpLg ? "h3" : "h4"}
+                          color="primary"
+                        >
+                          <b>Price Alert</b>
+                        </Typography>
+                        <Typography variant={isWidthUpLg ? "h3" : "h4"}>
+                          Drive sales through strategic price updates
+                        </Typography>
+                      </Box>
+                      <div>
+                        <Box mb={2}>
+                          <Typography
+                            variant={isWidthUpLg ? "h6" : "body1"}
+                            color="textSecondary"
+                          >
+                            Let your visitors configure prices for what they are
+                            willing to pay and receive emails when the price
+                            reach it.
+                          </Typography>
+                        </Box>
+                        <Button
+                          variant="contained"
+                          color="secondary"
+                          fullWidth
+                          className={classes.extraLargeButton}
+                          classes={{ label: classes.extraLargeButtonLabel }}
+                          href="#"
+                        >
+                          Install in your Shopify store
+                        </Button>
+                      </div>
+                    </Box>
+                    {/** END OF TEST BOX */}
+
+                    {/* <ZoomImage
                       src={imgObj.src}
                       className={classes.image}
                       alt="Dashboard example"
-                    />
+                    /> */}
                   </Grid>
                 </Box>
               </div>
